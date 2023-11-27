@@ -16,6 +16,11 @@ pipeline {
                  git branch: 'main', credentialsId: 'git-pat', url: 'https://github.com/charan23199/registration-app.git'
             }
         }
+         stage('Build- =Application') {
+            steps {
+                 sh 'mvn clean package'
+            }
+        }
     }
 }
 
