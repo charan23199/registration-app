@@ -1,0 +1,7 @@
+pipeline {
+    agent { label 'Jenkin-Agent' }
+    tools {
+        jdk 'jdk17'
+        maven 'Maven3'
+    }
+}
