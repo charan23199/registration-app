@@ -2,12 +2,12 @@ pipeline {
     agent { label 'Jenkin-Agent' }
     tools {
         jdk 'jdk17'
-        maven 'Maven3'
+        maven 'maven3'
     }
     stages {
-        stage('workspace cleanup') {
+        stage('workspace-cleanup') {
             steps {
-                cleaanWs()
+                cleanWs()
             }
         }
     
